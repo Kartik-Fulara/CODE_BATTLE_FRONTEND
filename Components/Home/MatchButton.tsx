@@ -20,7 +20,7 @@ const MatchButton = ({ setChannelID, setLoading, setChannelToken, setQuestion }:
       return;
     }
     setLoading(true);
-    const res = await axios.post(`${url}/matchmaking/start`, {
+    const res = await axios.post(`${url}matchmaking/start`, {
       player: username,
     });
     setChannelToken(res.data.channelToken);

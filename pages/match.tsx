@@ -41,7 +41,7 @@ const Match = ({ channelToken, channelID, question }: any) => {
   //Calling the API to Start the Timer
   useEffect(() => {
     const startGame = async () => {
-      await axios.post(`${url}/game/start`, {
+      await axios.post(`${url}game/start`, {
         channelID,
         channelToken,
       });
@@ -58,7 +58,7 @@ const Match = ({ channelToken, channelID, question }: any) => {
   const handleCompile = async () => {
     setLoading(true);
 
-    const res: any = await axios.post(`${url}/game/check-code`, {
+    const res: any = await axios.post(`${url}game/check-code`, {
       input: {
         input: JSON.parse(question)?.input[0]?.nums,
         target: JSON.parse(question)?.input[0]?.target,
@@ -72,7 +72,7 @@ const Match = ({ channelToken, channelID, question }: any) => {
 
   const handleSubmit = async () => {
     //Submit the code
-    const res: any = await axios.post(`${url}/game/submit`, {
+    const res: any = await axios.post(`${url}game/submit`, {
       channelID,
       channelToken,
       username: getCookie("username"),
