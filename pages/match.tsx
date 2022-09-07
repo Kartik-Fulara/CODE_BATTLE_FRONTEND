@@ -128,7 +128,10 @@ const Match = ({ channelToken, channelID, question }: any) => {
         <section className=" h-[40%] lg:h-full  flex w-full lg:w-1/2">
           {/* Question will display here */}
           {question && (
-            <QuestionsContainer question={JSON.parse(question)} output={output} />
+            <QuestionsContainer
+              question={JSON.parse(question)}
+              output={output}
+            />
           )}
         </section>
         <section className="h-full flex  w-full lg:w-1/2">
