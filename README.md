@@ -21,6 +21,8 @@ This Website uses HOP in its Realtime Implementation.
 
 https://codebattle-frontend.herokuapp.com/
 
+## DevPost HACKERTHON LINK
+https://devpost.com/Kartik-Fulara?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav
 
 ## Run Locally
 
